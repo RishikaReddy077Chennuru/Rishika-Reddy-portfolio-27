@@ -12,15 +12,22 @@ import ParticleBackground from '../components/ParticleBackground';
 
 const Index = () => {
   useEffect(() => {
-    // Initialize AOS
-    import('aos').then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        easing: 'ease-out-cubic',
-        once: true,
-        offset: 100,
-      });
-    });
+    // Initialize AOS with error handling
+    const initAOS = async () => {
+      try {
+        const AOS = await import('aos');
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-out-cubic',
+          once: true,
+          offset: 100,
+        });
+      } catch (error) {
+        console.warn('AOS library failed to load:', error);
+      }
+    };
+
+    initAOS();
   }, []);
 
   return (
