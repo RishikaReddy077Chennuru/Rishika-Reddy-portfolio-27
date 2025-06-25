@@ -17,8 +17,8 @@ const About = () => {
             <div className="relative">
               <div className="w-80 h-80 mx-auto bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl backdrop-blur-sm border border-white/10 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
-                  alt="Profile" 
+                  src="/lovable-uploads/fce3d925-0a08-46aa-a05a-68354862cd54.png"
+                  alt="Rishika Reddy Chennuru" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -30,29 +30,27 @@ const About = () => {
           <div data-aos="fade-left">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-white mb-6">
-                Passionate Developer & Designer
+                Passionate Student & Designer
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I'm a creative full-stack developer with 5+ years of experience in crafting 
-                beautiful, functional, and user-centered digital experiences. I combine 
-                technical expertise with design thinking to build applications that not only 
-                work flawlessly but also delight users.
+                Driven and innovative, I honed my technical and creative skills as an Intern at Android Developer by 
+                Google for Developers, where I expanded my software proficiency and streamlined processes. A 
+                quick learner with a knack for multitasking, my contributions enhanced website usability, showcasing 
+                my ability to blend computer skills with creativity effectively.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                When I'm not coding, you'll find me exploring new technologies, contributing 
-                to open-source projects, or designing the next big thing. I believe in 
-                continuous learning and staying ahead of the curve in this ever-evolving 
-                tech landscape.
+                Experienced with project assistance and teamwork. Utilizes strong organizational skills to manage 
+                tasks efficiently. I have good designing skills and created so many designs using Figma.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">5+</div>
                   <div className="text-gray-400">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-pink-400 mb-2">5+</div>
-                  <div className="text-gray-400">Years Experience</div>
+                  <div className="text-3xl font-bold text-pink-400 mb-2">Student</div>
+                  <div className="text-gray-400">Data Science</div>
                 </div>
               </div>
             </div>

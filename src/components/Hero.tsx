@@ -53,16 +53,16 @@ const Hero = () => {
         </div>
         
         <div className="hero-text mb-6">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              John Doe
+              Rishika Reddy Chennuru
             </span>
           </h1>
         </div>
         
         <div className="hero-text mb-8">
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Full Stack Developer & UI/UX Designer crafting beautiful digital experiences
+            Student & UI/UX Designer crafting beautiful digital experiences
           </p>
         </div>
         

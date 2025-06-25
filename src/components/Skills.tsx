@@ -4,36 +4,31 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Frontend & Design",
+      icon: "🎨",
+      skills: [
+        { name: "HTML", level: 90 },
+        { name: "CSS", level: 88 },
+        { name: "UI/UX Design", level: 95 },
+        { name: "Figma", level: 92 },
+      ]
+    },
+    {
+      title: "Programming",
       icon: "💻",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 88 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Vue.js", level: 85 },
+        { name: "Java", level: 85 },
+        { name: "Python", level: 80 },
+        { name: "SQL", level: 82 },
       ]
     },
     {
-      title: "Backend",
-      icon: "⚙️",
-      skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "Express.js", level: 88 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 85 },
-      ]
-    },
-    {
-      title: "Tools & Design",
+      title: "Tools & Version Control",
       icon: "🛠️",
       skills: [
-        { name: "Figma", level: 90 },
-        { name: "Git", level: 95 },
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Adobe Creative Suite", level: 85 },
+        { name: "Git", level: 85 },
+        { name: "Project Management", level: 88 },
+        { name: "Creative Problem Solving", level: 90 },
       ]
     }
   ];
