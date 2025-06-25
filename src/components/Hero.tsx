@@ -37,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section id="home" className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8">
       {/* Liquid background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
       
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
+      <div className="relative z-10 text-center max-w-4xl mx-auto flex-1 flex flex-col justify-center">
         <div className="hero-text mb-4">
           <h2 className="text-xl md:text-2xl text-purple-300 font-light mb-4">
             Hello, I'm
@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="flex justify-center space-x-6 mb-12">
+        <div className="flex justify-center space-x-6">
           <a href="#" className="social-link text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110">
             <Github size={28} />
           </a>
@@ -88,8 +88,10 @@ const Hero = () => {
             <Mail size={28} />
           </a>
         </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      </div>
+      
+      <div className="relative z-10 flex justify-center pb-8">
+        <div className="animate-bounce">
           <ChevronDown className="text-purple-400" size={32} />
         </div>
       </div>
