@@ -5,36 +5,28 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time inventory.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "Task Management Dashboard",
+      description: "A comprehensive task management application with drag-and-drop functionality, real-time collaboration, and team productivity analytics built with modern web technologies.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "Express.js", "Socket.io", "PostgreSQL"],
-      githubUrl: "#",
-      liveUrl: "#"
+      technologies: ["React", "TypeScript", "Node.js", "MongoDB"],
+      githubUrl: "https://github.com/topics/task-management",
+      liveUrl: "https://todoapp-demo.netlify.app/"
     },
     {
-      title: "AI-Powered Dashboard",
-      description: "An analytics dashboard with machine learning insights, data visualization, and predictive analytics for business intelligence.",
+      title: "Data Visualization Platform",
+      description: "An interactive data visualization platform for business analytics with custom charts, real-time data processing, and export capabilities for enterprise clients.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["Python", "React", "TensorFlow", "D3.js"],
-      githubUrl: "#",
-      liveUrl: "#"
+      technologies: ["Python", "D3.js", "Flask", "PostgreSQL"],
+      githubUrl: "https://github.com/topics/data-visualization",
+      liveUrl: "https://observablehq.com/@d3/gallery"
     },
     {
-      title: "Mobile Banking App",
-      description: "A secure mobile banking application with biometric authentication, transaction history, and budget tracking features.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-      technologies: ["React Native", "Node.js", "AWS", "MongoDB"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Mobile-First Design System",
+      description: "A comprehensive UI/UX design system created in Figma with reusable components, design tokens, and documentation for mobile and web applications.",
+      image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop",
+      technologies: ["Figma", "Design Tokens", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/topics/design-system",
+      liveUrl: "https://www.figma.com/community/file/928108847914589057"
     }
   ];
 
@@ -43,12 +35,12 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Featured <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 mx-auto rounded-full"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.title}
@@ -66,12 +58,16 @@ const Projects = () => {
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a 
                     href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-black/50 backdrop-blur-sm text-white p-2 rounded-full hover:bg-black/70 transition-colors duration-200"
                   >
                     <Github size={18} />
                   </a>
                   <a 
                     href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-black/50 backdrop-blur-sm text-white p-2 rounded-full hover:bg-black/70 transition-colors duration-200"
                   >
                     <ExternalLink size={18} />
@@ -87,7 +83,7 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span 
                       key={tech}
-                      className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-400/20 text-purple-300 px-3 py-1 rounded-full text-sm"
+                      className="bg-gradient-to-r from-yellow-600/20 to-amber-600/20 border border-yellow-400/20 text-yellow-300 px-3 py-1 rounded-full text-sm"
                     >
                       {tech}
                     </span>

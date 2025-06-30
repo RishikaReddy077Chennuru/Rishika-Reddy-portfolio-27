@@ -69,23 +69,23 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1e1e2e;
+    background: #1a1a1a;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #a855f7, #ec4899);
+    background: linear-gradient(to bottom, #facc15, #eab308);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #9333ea, #db2777);
+    background: linear-gradient(to bottom, #eab308, #ca8a04);
   }
 }
 
 @layer components {
   /* Liquid background animation */
   .liquid-bg {
-    background: linear-gradient(-45deg, #1e1b4b, #581c87, #7c2d12, #1e1b4b);
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #262626, #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
@@ -104,9 +104,9 @@
 
   /* Glowing text effect */
   .glow-text {
-    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5),
-                 0 0 20px rgba(168, 85, 247, 0.3),
-                 0 0 30px rgba(168, 85, 247, 0.2);
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.5),
+                 0 0 20px rgba(250, 204, 21, 0.3),
+                 0 0 30px rgba(250, 204, 21, 0.2);
   }
 
   /* Floating animation */
@@ -158,14 +158,14 @@
 
   /* Hover glow effect */
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.3);
   }
 
   /* Gradient border animation */
   .gradient-border {
     position: relative;
     background: linear-gradient(90deg, transparent, transparent),
-                linear-gradient(90deg, #a855f7, #ec4899, #3b82f6, #a855f7);
+                linear-gradient(90deg, #facc15, #eab308, #f59e0b, #facc15);
     background-size: 100% 2px, 400% 2px;
     background-position: 100% 100%, 0% 100%;
     background-repeat: no-repeat;

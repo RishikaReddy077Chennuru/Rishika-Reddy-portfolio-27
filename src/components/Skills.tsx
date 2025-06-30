@@ -38,9 +38,9 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Skills</span>
+            My <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -61,11 +61,11 @@ const Skills = () => {
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-purple-400 font-semibold">{skill.level}%</span>
+                      <span className="text-yellow-400 font-semibold">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700/50 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-yellow-500 to-amber-500 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ 
                           width: `${skill.level}%`,
                           animationDelay: `${(index * 200) + (skillIndex * 100)}ms`

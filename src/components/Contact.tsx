@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -39,27 +39,21 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      content: "john.doe@example.com",
-      link: "mailto:john.doe@example.com"
-    },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "rishikareddychennuri@gmail.com",
+      link: "mailto:rishikareddychennuri@gmail.com"
     },
     {
       icon: <MapPin size={24} />,
       title: "Location",
-      content: "San Francisco, CA",
+      content: "Hyderabad, India",
       link: "#"
     }
   ];
 
   const socialLinks = [
-    { icon: <Github size={24} />, href: "#", label: "GitHub" },
-    { icon: <Linkedin size={24} />, href: "#", label: "LinkedIn" },
-    { icon: <Twitter size={24} />, href: "#", label: "Twitter" }
+    { icon: <Github size={24} />, href: "https://github.com/RishikaReddy077Chennuru", label: "GitHub" },
+    { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/rishika-reddy-chennuru", label: "LinkedIn" },
+    { icon: <Mail size={24} />, href: "mailto:rishikareddychennuri@gmail.com", label: "Email" }
   ];
 
   return (
@@ -67,9 +61,9 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Get In <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Touch</span>
+            Get In <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 mx-auto rounded-full"></div>
           <p className="text-gray-300 text-lg mt-6 max-w-2xl mx-auto">
             Have a project in mind or just want to chat? I'd love to hear from you!
           </p>
@@ -86,9 +80,9 @@ const Contact = () => {
                   <a 
                     key={info.title}
                     href={info.link}
-                    className="flex items-center gap-4 text-gray-300 hover:text-purple-400 transition-colors duration-200 group"
+                    className="flex items-center gap-4 text-gray-300 hover:text-yellow-400 transition-colors duration-200 group"
                   >
-                    <div className="text-purple-400 group-hover:scale-110 transition-transform duration-200">
+                    <div className="text-yellow-400 group-hover:scale-110 transition-transform duration-200">
                       {info.icon}
                     </div>
                     <div>
@@ -106,7 +100,9 @@ const Contact = () => {
                     <a
                       key={social.label}
                       href={social.href}
-                      className="text-gray-400 hover:text-purple-400 transition-all duration-200 transform hover:scale-110"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-yellow-400 transition-all duration-200 transform hover:scale-110"
                       aria-label={social.label}
                     >
                       {social.icon}
@@ -132,7 +128,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors duration-200"
                     placeholder="John Doe"
                   />
                 </div>
@@ -147,7 +143,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors duration-200"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -164,7 +160,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors duration-200"
                   placeholder="Project Collaboration"
                 />
               </div>
@@ -180,7 +176,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors duration-200 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>
@@ -188,10 +184,10 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
+                className="w-full bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-black font-medium py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
               >
                 {isSubmitting ? (
-                  <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  <div className="w-5 h-5 border-2 border-black/30 border-t-black rounded-full animate-spin" />
                 ) : (
                   <>
                     <Send size={18} />
@@ -207,7 +203,7 @@ const Contact = () => {
       {/* Footer */}
       <div className="mt-20 pt-8 border-t border-white/10 text-center">
         <p className="text-gray-400">
-          © 2024 John Doe. Made with ❤️ using React & TypeScript
+          © 2024 Rishika Reddy Chennuru. Made with ❤️ using React & TypeScript
         </p>
       </div>
     </section>

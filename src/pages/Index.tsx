@@ -31,7 +31,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-x-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black overflow-x-hidden">
       <ParticleBackground />
       <Navbar />
       <Hero />
