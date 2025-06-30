@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const About = () => {
@@ -7,23 +6,23 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            About <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Me</span>
+            About <span className="bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">Me</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-300 to-pink-300 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div data-aos="fade-right">
             <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-500/20 to-amber-500/20 rounded-3xl backdrop-blur-sm border border-white/10 overflow-hidden">
+              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl backdrop-blur-sm border border-white/10 overflow-hidden">
                 <img 
                   src="/lovable-uploads/fce3d925-0a08-46aa-a05a-68354862cd54.png"
                   alt="Rishika Reddy Chennuru" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-yellow-400 to-amber-400 rounded-full blur-xl opacity-60"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-amber-400 to-yellow-400 rounded-full blur-xl opacity-40"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full blur-xl opacity-60"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-pink-300 to-blue-300 rounded-full blur-xl opacity-40"></div>
             </div>
           </div>
           
@@ -45,11 +44,11 @@ const About = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-400 mb-2">5+</div>
+                  <div className="text-3xl font-bold text-purple-300 mb-2">5+</div>
                   <div className="text-gray-400">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-400 mb-2">Student</div>
+                  <div className="text-3xl font-bold text-pink-300 mb-2">Student</div>
                   <div className="text-gray-400">Data Science</div>
                 </div>
               </div>

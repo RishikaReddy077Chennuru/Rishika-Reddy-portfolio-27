@@ -38,23 +38,23 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8">
-      {/* Liquid background shapes */}
+      {/* Evening sky background shapes */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-300/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto flex-1 flex flex-col justify-center">
         <div className="hero-text mb-4">
-          <h2 className="text-xl md:text-2xl text-yellow-300 font-light mb-4">
+          <h2 className="text-xl md:text-2xl text-purple-300 font-light mb-4">
             Hello, I'm
           </h2>
         </div>
         
         <div className="hero-text mb-6">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-            <span className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-blue-300 bg-clip-text text-transparent">
               Rishika Reddy Chennuru
             </span>
           </h1>
@@ -68,10 +68,10 @@ const Hero = () => {
         
         <div className="hero-cta mb-12">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-black px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+            <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
               View My Work
             </button>
-            <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105">
+            <button className="border-2 border-purple-300 text-purple-300 hover:bg-purple-300 hover:text-gray-900 px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105">
               Get In Touch
             </button>
           </div>
@@ -92,7 +92,7 @@ const Hero = () => {
       
       <div className="relative z-10 flex justify-center pb-8">
         <div className="animate-bounce">
-          <ChevronDown className="text-yellow-400" size={32} />
+          <ChevronDown className="text-purple-300" size={32} />
         </div>
       </div>
     </section>

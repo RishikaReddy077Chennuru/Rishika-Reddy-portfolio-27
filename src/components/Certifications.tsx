@@ -8,7 +8,7 @@ const Certifications = () => {
       title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
       issuer: "Amazon Web Services",
       date: "2025",
-      image: "/lovable-uploads/09ad1fb2-2b13-43d1a86f-490c0865574b.png",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=300&fit=crop&crop=center",
       verifyUrl: "https://www.credly.com/go/pZKtnfDw"
     },
     {
@@ -32,9 +32,9 @@ const Certifications = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Certifications</span>
+            <span className="bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">Certifications</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-300 to-pink-300 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,16 +54,16 @@ const Certifications = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute top-2 right-2">
-                  <Award className="text-yellow-400" size={20} />
+                  <Award className="text-purple-300" size={20} />
                 </div>
               </div>
               
               <div className="p-4">
                 <h3 className="text-lg font-bold text-white mb-2 line-clamp-2">{cert.title}</h3>
-                <p className="text-yellow-300 font-medium mb-1">{cert.issuer}</p>
+                <p className="text-purple-300 font-medium mb-1">{cert.issuer}</p>
                 <p className="text-gray-400 text-sm mb-3">{cert.date}</p>
                 
-                <div className="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 text-sm font-medium transition-colors duration-200">
+                <div className="inline-flex items-center gap-2 text-purple-300 hover:text-pink-300 text-sm font-medium transition-colors duration-200">
                   <ExternalLink size={14} />
                   View Certificate
                 </div>

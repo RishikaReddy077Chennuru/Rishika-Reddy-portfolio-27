@@ -8,44 +8,44 @@
 
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 240 20% 8%;
+    --foreground: 240 15% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 20% 8%;
+    --card-foreground: 240 15% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 20% 8%;
+    --popover-foreground: 240 15% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 240 15% 95%;
+    --primary-foreground: 240 20% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 250 20% 15%;
+    --secondary-foreground: 240 15% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 250 20% 15%;
+    --muted-foreground: 240 10% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 250 20% 15%;
+    --accent-foreground: 240 15% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 240 15% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 250 20% 15%;
+    --input: 250 20% 15%;
+    --ring: 280 50% 80%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 240 20% 8%;
+    --sidebar-foreground: 240 15% 95%;
+    --sidebar-primary: 280 50% 70%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 250 20% 15%;
+    --sidebar-accent-foreground: 240 15% 95%;
+    --sidebar-border: 250 20% 15%;
+    --sidebar-ring: 280 50% 80%;
   }
 }
 
@@ -57,6 +57,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1a1625 0%, #2d1b35 25%, #4a2c5a 50%, #6b4578 75%, #8b5a94 100%);
   }
 
   html {
@@ -69,23 +70,23 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1a1a1a;
+    background: #1a1625;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #facc15, #eab308);
+    background: linear-gradient(to bottom, #dcc5f0, #b89dde);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #eab308, #ca8a04);
+    background: linear-gradient(to bottom, #b89dde, #9575cd);
   }
 }
 
 @layer components {
-  /* Liquid background animation */
+  /* Evening sky gradient background animation */
   .liquid-bg {
-    background: linear-gradient(-45deg, #000000, #1a1a1a, #262626, #000000);
+    background: linear-gradient(-45deg, #1a1625, #2d1b35, #4a2c5a, #6b4578);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
@@ -102,11 +103,11 @@
     }
   }
 
-  /* Glowing text effect */
+  /* Glowing text effect with evening colors */
   .glow-text {
-    text-shadow: 0 0 10px rgba(250, 204, 21, 0.5),
-                 0 0 20px rgba(250, 204, 21, 0.3),
-                 0 0 30px rgba(250, 204, 21, 0.2);
+    text-shadow: 0 0 10px rgba(220, 197, 240, 0.5),
+                 0 0 20px rgba(220, 197, 240, 0.3),
+                 0 0 30px rgba(220, 197, 240, 0.2);
   }
 
   /* Floating animation */
@@ -149,23 +150,23 @@
     overflow: hidden;
   }
 
-  /* Glass morphism effect */
+  /* Glass morphism effect with evening colors */
   .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(220, 197, 240, 0.05);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(220, 197, 240, 0.1);
   }
 
   /* Hover glow effect */
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(250, 204, 21, 0.3);
+    box-shadow: 0 0 30px rgba(220, 197, 240, 0.3);
   }
 
   /* Gradient border animation */
   .gradient-border {
     position: relative;
     background: linear-gradient(90deg, transparent, transparent),
-                linear-gradient(90deg, #facc15, #eab308, #f59e0b, #facc15);
+                linear-gradient(90deg, #dcc5f0, #f0b7a4, #a8d5f7, #dcc5f0);
     background-size: 100% 2px, 400% 2px;
     background-position: 100% 100%, 0% 100%;
     background-repeat: no-repeat;
