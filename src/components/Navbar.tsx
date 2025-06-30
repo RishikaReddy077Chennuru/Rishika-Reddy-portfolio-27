@@ -40,7 +40,7 @@ const Navbar = () => {
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map(item => <a key={item.name} href={item.href} className="text-white hover:text-amber-400 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group">
+              {navItems.map(item => <a key={item.name} href={item.href} className="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group">
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>)}
