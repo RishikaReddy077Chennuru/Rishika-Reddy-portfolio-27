@@ -44,7 +44,7 @@ const Navbar = () => {
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>)}
-              <button className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-black px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2 hover:shadow-lg">
+              <button className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-black px-4 py-2 rounded-full text-sm transition-all duration-200 flex items-center gap-2 hover:shadow-lg bg-purple-300 hover:bg-purple-200 font-medium">
                 <Download size={16} />
                 Resume
               </button>
