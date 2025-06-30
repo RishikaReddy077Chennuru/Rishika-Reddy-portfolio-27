@@ -32,7 +32,7 @@ const Certifications = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Certifications</span>
+            <span className="bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent">Certifications</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto rounded-full"></div>
         </div>
@@ -54,16 +54,16 @@ const Certifications = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                 <div className="absolute top-2 right-2">
-                  <Award className="text-amber-300 drop-shadow-lg" size={20} />
+                  <Award className="text-orange-400 drop-shadow-lg" size={20} />
                 </div>
               </div>
               
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2 line-clamp-2">{cert.title}</h3>
-                <p className="text-purple-600 font-medium mb-1">{cert.issuer}</p>
-                <p className="text-gray-600 text-sm mb-3">{cert.date}</p>
+                <h3 className="text-lg font-bold card-text-primary mb-2 line-clamp-2">{cert.title}</h3>
+                <p className="text-purple-500 font-medium mb-1">{cert.issuer}</p>
+                <p className="card-text-secondary text-sm mb-3">{cert.date}</p>
                 
-                <div className="inline-flex items-center gap-2 text-blue-600 hover:text-purple-600 text-sm font-medium transition-colors duration-200">
+                <div className="inline-flex items-center gap-2 text-blue-500 hover:text-purple-500 text-sm font-medium transition-colors duration-200">
                   <ExternalLink size={14} />
                   View Certificate
                 </div>

@@ -38,9 +38,9 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
-            My <span className="bg-gradient-to-r from-purple-600 to-amber-500 bg-clip-text text-transparent">Skills</span>
+            My <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-amber-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-orange-400 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -53,19 +53,19 @@ const Skills = () => {
             >
               <div className="text-center mb-8">
                 <div className="text-4xl mb-4">{category.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-800">{category.title}</h3>
+                <h3 className="text-2xl font-bold card-text-primary">{category.title}</h3>
               </div>
               
               <div className="space-y-6">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-700 font-medium">{skill.name}</span>
-                      <span className="text-purple-600 font-semibold">{skill.level}%</span>
+                      <span className="card-text-secondary font-medium">{skill.name}</span>
+                      <span className="text-purple-500 font-semibold">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-gray-300/50 rounded-full h-2">
+                    <div className="w-full bg-white/30 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-purple-500 to-amber-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-purple-400 to-orange-400 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ 
                           width: `${skill.level}%`,
                           animationDelay: `${(index * 200) + (skillIndex * 100)}ms`

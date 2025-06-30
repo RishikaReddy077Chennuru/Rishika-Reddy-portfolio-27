@@ -35,9 +35,9 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
-            Featured <span className="bg-gradient-to-r from-amber-500 to-blue-500 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-blue-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-blue-400 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -60,7 +60,7 @@ const Projects = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="glass-card text-gray-800 p-2 rounded-full hover:glass-strong transition-colors duration-200"
+                    className="glass-card text-evening-primary p-2 rounded-full hover:glass-strong transition-colors duration-200"
                   >
                     <Github size={18} />
                   </a>
@@ -68,7 +68,7 @@ const Projects = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="glass-card text-gray-800 p-2 rounded-full hover:glass-strong transition-colors duration-200"
+                    className="glass-card text-evening-primary p-2 rounded-full hover:glass-strong transition-colors duration-200"
                   >
                     <ExternalLink size={18} />
                   </a>
@@ -76,14 +76,14 @@ const Projects = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{project.title}</h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-bold card-text-primary mb-3">{project.title}</h3>
+                <p className="card-text-secondary mb-4 leading-relaxed">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span 
                       key={tech}
-                      className="glass-card border border-amber-300/30 text-amber-700 px-3 py-1 rounded-full text-sm"
+                      className="glass-card border border-orange-200/50 text-orange-600 px-3 py-1 rounded-full text-sm"
                     >
                       {tech}
                     </span>
