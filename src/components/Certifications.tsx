@@ -34,7 +34,7 @@ const Certifications = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
             <span className="bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent">Certifications</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-300 to-blue-300 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,7 +54,7 @@ const Certifications = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                 <div className="absolute top-2 right-2">
-                  <Award className="text-orange-400 drop-shadow-lg" size={20} />
+                  <Award className="text-pink-400 drop-shadow-lg" size={20} />
                 </div>
               </div>
               

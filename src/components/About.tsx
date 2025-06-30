@@ -7,9 +7,9 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
-            About <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Me</span>
+            About <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Me</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-300 to-purple-300 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -22,8 +22,8 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-purple-300 to-orange-300 rounded-full blur-xl opacity-60"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-orange-300 to-blue-300 rounded-full blur-xl opacity-40"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full blur-xl opacity-60"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full blur-xl opacity-40"></div>
             </div>
           </div>
           
@@ -45,11 +45,11 @@ const About = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-500 mb-2">5+</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">5+</div>
                   <div className="card-text-secondary">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">Student</div>
+                  <div className="text-3xl font-bold text-purple-500 mb-2">Student</div>
                   <div className="card-text-secondary">Data Science</div>
                 </div>
               </div>

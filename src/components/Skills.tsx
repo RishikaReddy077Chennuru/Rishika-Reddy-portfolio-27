@@ -38,9 +38,9 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
-            My <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">Skills</span>
+            My <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-orange-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-300 to-pink-300 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -65,7 +65,7 @@ const Skills = () => {
                     </div>
                     <div className="w-full bg-white/30 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-purple-400 to-orange-400 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-blue-400 to-purple-400 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ 
                           width: `${skill.level}%`,
                           animationDelay: `${(index * 200) + (skillIndex * 100)}ms`
