@@ -19,16 +19,7 @@ const ParticleBackground = () => {
       vy: number;
       size: number;
       opacity: number;
-      color: string;
     }> = [];
-
-    const colors = [
-      'rgba(196, 181, 253, 0.4)', // Lavender
-      'rgba(251, 191, 36, 0.3)',  // Peach/Amber
-      'rgba(147, 197, 253, 0.4)', // Pastel Blue
-      'rgba(224, 231, 255, 0.3)', // Light Blue
-      'rgba(243, 232, 255, 0.4)', // Light Lavender
-    ];
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -43,11 +34,10 @@ const ParticleBackground = () => {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.3,
-          vy: (Math.random() - 0.5) * 0.3,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
           size: Math.random() * 2 + 0.5,
-          opacity: Math.random() * 0.4 + 0.2,
-          color: colors[Math.floor(Math.random() * colors.length)],
+          opacity: Math.random() * 0.5 + 0.2,
         });
       }
     };
@@ -64,7 +54,7 @@ const ParticleBackground = () => {
         
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = particle.color;
+        ctx.fillStyle = `rgba(147, 51, 234, ${particle.opacity})`;
         ctx.fill();
         
         // Connect nearby particles
@@ -77,7 +67,7 @@ const ParticleBackground = () => {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(196, 181, 253, ${0.08 * (1 - distance / 100)})`;
+            ctx.strokeStyle = `rgba(147, 51, 234, ${0.1 * (1 - distance / 100)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
