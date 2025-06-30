@@ -34,17 +34,17 @@ const Projects = () => {
     <section id="projects" className="relative py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Featured <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Projects</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
+            Featured <span className="bg-gradient-to-r from-amber-500 to-blue-500 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-blue-500 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.title}
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-500 hover:transform hover:scale-105"
+              className="group glass-card rounded-3xl overflow-hidden hover:glass-strong transition-all duration-500 hover:transform hover:scale-105 hover-glow"
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
@@ -54,13 +54,13 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a 
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-black/50 backdrop-blur-sm text-white p-2 rounded-full hover:bg-black/70 transition-colors duration-200"
+                    className="glass-card text-gray-800 p-2 rounded-full hover:glass-strong transition-colors duration-200"
                   >
                     <Github size={18} />
                   </a>
@@ -68,7 +68,7 @@ const Projects = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-black/50 backdrop-blur-sm text-white p-2 rounded-full hover:bg-black/70 transition-colors duration-200"
+                    className="glass-card text-gray-800 p-2 rounded-full hover:glass-strong transition-colors duration-200"
                   >
                     <ExternalLink size={18} />
                   </a>
@@ -76,14 +76,14 @@ const Projects = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{project.title}</h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span 
                       key={tech}
-                      className="bg-gradient-to-r from-yellow-600/20 to-amber-600/20 border border-yellow-400/20 text-yellow-300 px-3 py-1 rounded-full text-sm"
+                      className="glass-card border border-amber-300/30 text-amber-700 px-3 py-1 rounded-full text-sm"
                     >
                       {tech}
                     </span>

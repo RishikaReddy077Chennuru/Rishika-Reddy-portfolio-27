@@ -70,7 +70,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1a1625;
+    background: rgba(196, 181, 253, 0.1);
   }
 
   ::-webkit-scrollbar-thumb {
@@ -86,7 +86,7 @@
 @layer components {
   /* Evening sky gradient background animation */
   .liquid-bg {
-    background: linear-gradient(-45deg, #1a1625, #2d1b35, #4a2c5a, #6b4578);
+    background: linear-gradient(-45deg, #f3e8ff, #fce7f3, #dbeafe, #e0e7ff);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
@@ -103,11 +103,33 @@
     }
   }
 
+  /* Glassmorphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.4);
+  }
+
   /* Glowing text effect with evening colors */
   .glow-text {
-    text-shadow: 0 0 10px rgba(220, 197, 240, 0.5),
-                 0 0 20px rgba(220, 197, 240, 0.3),
-                 0 0 30px rgba(220, 197, 240, 0.2);
+    text-shadow: 0 0 10px rgba(196, 181, 253, 0.6),
+                 0 0 20px rgba(196, 181, 253, 0.4),
+                 0 0 30px rgba(196, 181, 253, 0.3);
   }
 
   /* Floating animation */
@@ -150,23 +172,16 @@
     overflow: hidden;
   }
 
-  /* Glass morphism effect with evening colors */
-  .glass {
-    background: rgba(220, 197, 240, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(220, 197, 240, 0.1);
-  }
-
   /* Hover glow effect */
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(220, 197, 240, 0.3);
+    box-shadow: 0 0 30px rgba(196, 181, 253, 0.4);
   }
 
   /* Gradient border animation */
   .gradient-border {
     position: relative;
     background: linear-gradient(90deg, transparent, transparent),
-                linear-gradient(90deg, #dcc5f0, #f0b7a4, #a8d5f7, #dcc5f0);
+                linear-gradient(90deg, #c4b5fd, #fbbf24, #93c5fd, #c4b5fd);
     background-size: 100% 2px, 400% 2px;
     background-position: 100% 100%, 0% 100%;
     background-repeat: no-repeat;
@@ -175,6 +190,15 @@
 
   .gradient-border:hover {
     background-position: 0% 100%, 100% 100%;
+  }
+
+  /* Evening sky gradient backgrounds */
+  .evening-gradient {
+    background: linear-gradient(135deg, #c4b5fd 0%, #fbbf24 25%, #93c5fd 50%, #e0e7ff 75%, #f3e8ff 100%);
+  }
+
+  .evening-gradient-soft {
+    background: linear-gradient(135deg, rgba(196, 181, 253, 0.3) 0%, rgba(251, 191, 36, 0.2) 25%, rgba(147, 197, 253, 0.3) 50%, rgba(224, 231, 255, 0.2) 75%, rgba(243, 232, 255, 0.3) 100%);
   }
 }
 

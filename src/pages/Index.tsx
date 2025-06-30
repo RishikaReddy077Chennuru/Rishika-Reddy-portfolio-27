@@ -31,8 +31,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 overflow-x-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-purple-800/20 via-transparent to-pink-500/10"></div>
+    <div className="relative min-h-screen evening-gradient overflow-x-hidden">
+      <div className="absolute inset-0 evening-gradient-soft"></div>
       <ParticleBackground />
       <Navbar />
       <Hero />
