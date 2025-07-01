@@ -47,7 +47,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h2 className="responsive-heading font-bold mb-4 glow-text">
-            My <span className="w-20 sm:w-24 h-1 bg-gradient-to-r from-violet-400 to-indigo-400 mx-auto rounded-full ">Skills</span>
+            My <span className="w-20 sm:w-24 h-1 bg-gradient-to-r from-violet-400 to-indigo-400 mx-auto ">Skills</span>
           </h2>
           <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-lavender-400 to-lavender-300 mx-auto rounded-full"></div>
         </div>
