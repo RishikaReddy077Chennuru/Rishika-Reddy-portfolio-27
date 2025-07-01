@@ -5,7 +5,6 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Education from '../components/Education';
-import Resume from '../components/Resume';
 import Certifications from '../components/Certifications';
 import Contact from '../components/Contact';
 import Navbar from '../components/Navbar';
@@ -32,8 +31,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen evening-gradient overflow-x-hidden">
-      <div className="absolute inset-0 evening-gradient-soft"></div>
+    <div className="relative min-h-screen modern-gradient overflow-x-hidden">
+      <div className="absolute inset-0 modern-gradient-soft"></div>
       <ParticleBackground />
       <Navbar />
       <Hero />
@@ -41,7 +40,6 @@ const Index = () => {
       <Skills />
       <Projects />
       <Education />
-      <Resume />
       <Certifications />
       <Contact />
     </div>
