@@ -6,7 +6,7 @@ const About = () => {
           <h2 className="responsive-heading font-bold mb-4 glow-text">
             About <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Me</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-lavender-400 to-lavender-300 mx-auto rounded-full"></div>
+          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-violet-400 to-indigo-400 mx-auto rounded-full "></div>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
