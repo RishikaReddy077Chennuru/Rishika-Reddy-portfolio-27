@@ -60,11 +60,49 @@
     background: linear-gradient(135deg, 
       #f8fafc 0%,     /* Light grey */
       #f1f5f9 25%,    /* Lighter grey */
-      #f8f4ff 50%,    /* Light lavender */
-      #faf8ff 75%,    /* Very light lavender */
+      #f3f0ff 50%,    /* Light lavender */
+      #faf7ff 75%,    /* Very light lavender */
       #f9fafb 100%    /* Off-white grey */
     );
-    color: #334155; /* Cool dark grey for better readability */
+    color: #1e293b;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(196, 181, 253, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(167, 139, 250, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(196, 181, 253, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 60% 60%, rgba(230, 220, 255, 0.08) 0%, transparent 40%),
+      linear-gradient(45deg, rgba(196, 181, 253, 0.03) 0%, rgba(167, 139, 250, 0.05) 100%);
+    animation: floatingBackground 25s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  @keyframes floatingBackground {
+    0%, 100% {
+      opacity: 0.9;
+      transform: translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(-8px) rotate(1deg) scale(1.02);
+    }
+    50% {
+      opacity: 0.95;
+      transform: translateY(3px) rotate(-0.5deg) scale(0.98);
+    }
+    75% {
+      opacity: 1;
+      transform: translateY(-5px) rotate(0.8deg) scale(1.01);
+    }
   }
 
   html {
@@ -95,9 +133,9 @@
   .liquid-bg {
     background: linear-gradient(-45deg, 
       #f8fafc,      /* Light grey */
-      #f8f4ff,      /* Light lavender */
+      #f3f0ff,      /* Light lavender */
       #f1f5f9,      /* Lighter grey */
-      #faf8ff       /* Very light lavender */
+      #faf7ff       /* Very light lavender */
     );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -119,47 +157,47 @@
   .glass {
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(203, 213, 225, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(148, 163, 184, 0.15);
+    border: 1px solid rgba(196, 181, 253, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(167, 139, 250, 0.15);
   }
 
   .glass-card {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(203, 213, 225, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(148, 163, 184, 0.12);
+    border: 1px solid rgba(196, 181, 253, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(167, 139, 250, 0.12);
   }
 
   .glass-strong {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(25px);
-    border: 1px solid rgba(203, 213, 225, 0.4);
-    box-shadow: 0 12px 40px 0 rgba(148, 163, 184, 0.2);
+    border: 1px solid rgba(196, 181, 253, 0.4);
+    box-shadow: 0 12px 40px 0 rgba(167, 139, 250, 0.2);
   }
 
   /* Enhanced glowing text effect */
   .glow-text {
     color: #4c1d95; /* Deep lavender for headings */
-    text-shadow: 0 0 10px rgba(196, 181, 253, 0.3),
-                 0 0 20px rgba(196, 181, 253, 0.2),
-                 0 0 30px rgba(196, 181, 253, 0.1);
+    text-shadow: 0 0 10px rgba(196, 181, 253, 0.4),
+                 0 0 20px rgba(196, 181, 253, 0.3),
+                 0 0 30px rgba(196, 181, 253, 0.2);
   }
 
-  /* Text color utilities */
+  /* Text color utilities with full opacity */
   .text-primary {
-    color: #4c1d95; /* Deep lavender */
+    color: #1e293b; /* Dark slate with full opacity */
   }
 
   .text-secondary {
-    color: #64748b; /* Cool grey */
+    color: #475569; /* Darker grey with full opacity */
   }
 
   .text-accent {
-    color: #7c3aed; /* Lavender accent */
+    color: #7c3aed; /* Lavender accent with full opacity */
   }
 
   .text-muted {
-    color: #94a3b8; /* Light grey */
+    color: #64748b; /* Medium grey with full opacity */
   }
 
   /* Floating animation */
@@ -204,8 +242,8 @@
 
   /* Enhanced hover glow effect */
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(196, 181, 253, 0.25),
-                0 0 60px rgba(226, 232, 240, 0.15);
+    box-shadow: 0 0 30px rgba(196, 181, 253, 0.3),
+                0 0 60px rgba(167, 139, 250, 0.2);
     transform: translateY(-2px);
     transition: all 0.3s ease-out;
   }
@@ -230,29 +268,29 @@
     background: linear-gradient(135deg, 
       #f8fafc 0%,     /* Light grey */
       #f1f5f9 25%,    /* Lighter grey */
-      #f8f4ff 50%,    /* Light lavender */
-      #faf8ff 75%,    /* Very light lavender */
+      #f3f0ff 50%,    /* Light lavender */
+      #faf7ff 75%,    /* Very light lavender */
       #f9fafb 100%    /* Off-white grey */
     );
   }
 
   .modern-gradient-soft {
     background: linear-gradient(135deg, 
-      rgba(248, 250, 252, 0.6) 0%,     /* Light grey with opacity */
-      rgba(241, 245, 249, 0.5) 25%,    /* Lighter grey with opacity */
-      rgba(248, 244, 255, 0.6) 50%,    /* Light lavender with opacity */
-      rgba(250, 248, 255, 0.5) 75%,    /* Very light lavender with opacity */
-      rgba(249, 250, 251, 0.6) 100%    /* Off-white grey with opacity */
+      rgba(248, 250, 252, 0.6) 0%,
+      rgba(241, 245, 249, 0.5) 25%,
+      rgba(243, 240, 255, 0.6) 50%,
+      rgba(250, 247, 255, 0.5) 75%,
+      rgba(249, 250, 251, 0.6) 100%
     );
   }
 
-  /* Card text colors */
+  /* Card text colors with full opacity */
   .card-text-primary {
-    color: #1e293b; /* Dark slate for primary text */
+    color: #0f172a; /* Very dark slate for primary text */
   }
 
   .card-text-secondary {
-    color: #64748b; /* Slate for secondary text */
+    color: #334155; /* Darker slate for secondary text */
   }
 
   .card-text-accent {
@@ -342,3 +380,18 @@
     display: none !important;
   }
 }
+
+/* Lavender color utilities */
+.text-lavender-400 { color: #c4b5fd; }
+.text-lavender-500 { color: #a78bfa; }
+.text-lavender-600 { color: #8b5cf6; }
+.text-lavender-700 { color: #7c3aed; }
+
+.bg-lavender-200 { background-color: #e0e7ff; }
+.bg-lavender-300 { background-color: #c4b5fd; }
+.bg-lavender-400 { background-color: #a78bfa; }
+.bg-lavender-500 { background-color: #8b5cf6; }
+.bg-lavender-600 { background-color: #7c3aed; }
+
+.border-lavender-300 { border-color: #c4b5fd; }
+.border-lavender-400 { border-color: #a78bfa; }
