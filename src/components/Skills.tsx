@@ -66,10 +66,10 @@ const Skills = () => {
                       <span className="text-lavender-600 font-semibold text-sm sm:text-base">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-slate-200/50 rounded-full h-2">
-                      <div style={{
+                      <div className="bg-gradient-to-r from-lavender-500 to-lavender-400 h-2 rounded-full transition-all duration-1000 ease-out" style={{
                   width: `${skill.level}%`,
                   animationDelay: `${index * 200 + skillIndex * 100}ms`
-                }} className="bg-gradient-to-r from-violet-500 to-indigo-500 h-2 rounded-full transition-all duration-1000 ease-out"></div>
+                }}></div>
                     </div>
                   </div>)}
               </div>
