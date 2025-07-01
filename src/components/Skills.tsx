@@ -38,9 +38,9 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h2 className="responsive-heading font-bold mb-4 glow-text">
-            My <span className="bg-gradient-to-r from-lavender-600 to-lavender-500 bg-clip-text text-transparent">Skills</span>
+            My <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-lavender-400 to-lavender-300 mx-auto rounded-full"></div>
+          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -61,11 +61,11 @@ const Skills = () => {
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
                       <span className="card-text-secondary font-medium text-sm sm:text-base">{skill.name}</span>
-                      <span className="text-lavender-600 font-semibold text-sm sm:text-base">{skill.level}%</span>
+                      <span className="text-violet-600 font-semibold text-sm sm:text-base">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-slate-200/50 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-lavender-500 to-lavender-400 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-violet-500 to-indigo-500 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ 
                           width: `${skill.level}%`,
                           animationDelay: `${(index * 200) + (skillIndex * 100)}ms`
