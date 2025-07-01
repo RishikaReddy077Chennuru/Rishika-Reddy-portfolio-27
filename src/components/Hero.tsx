@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
         </div>
         
-        <div className="hero-cta mb-8 sm:mb-12">
+        <div className="w-full sm:w-auto glass-strong bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-600 hover:to-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
             <button onClick={() => scrollToSection('projects')} className="w-full sm:w-auto glass-strong bg-gradient-to-r from-lavender-500 to-lavender-400 hover:from-lavender-600 hover:to-lavender-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
               View My Work
