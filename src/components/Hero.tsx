@@ -1,30 +1,25 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const loadGSAP = async () => {
-      const { gsap } = await import('gsap');
-      
+      const {
+        gsap
+      } = await import('gsap');
       const tl = gsap.timeline();
-      
       tl.from('.hero-text', {
         y: 100,
         opacity: 0,
         duration: 1,
         stagger: 0.2,
         ease: 'power3.out'
-      })
-      .from('.hero-cta', {
+      }).from('.hero-cta', {
         y: 50,
         opacity: 0,
         duration: 0.8,
         ease: 'power3.out'
-      }, '-=0.3')
-      .from('.social-link', {
+      }, '-=0.3').from('.social-link', {
         y: 30,
         opacity: 0,
         duration: 0.6,
@@ -32,22 +27,31 @@ const Hero = () => {
         ease: 'power3.out'
       }, '-=0.4');
     };
-
     loadGSAP();
   }, []);
-
-  return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-center responsive-container">
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  };
+  return <section id="home" className="relative min-h-screen flex flex-col justify-center responsive-container">
       {/* Modern background shapes */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-violet-200/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-slate-200/25 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-indigo-200/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-lavender-200/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-slate-200/25 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-lavender-300/20 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '2s'
+      }}></div>
       </div>
       
       <div className="relative z-10 text-center max-w-5xl mx-auto flex-1 flex flex-col justify-center py-16 sm:py-20">
         <div className="hero-text mb-2 sm:mb-4">
-          <h2 className="text-lg sm:text-xl lg:text-2xl text-violet-600 font-light mb-2 sm:mb-4">
+          <h2 className="text-lg sm:text-xl lg:text-2xl text-lavender-600 font-light mb-2 sm:mb-4">
             Hello, I'm
           </h2>
         </div>
@@ -68,10 +72,10 @@ const Hero = () => {
         
         <div className="hero-cta mb-8 sm:mb-12">
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
-            <button className="w-full sm:w-auto glass-strong bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-600 hover:to-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+            <button onClick={() => scrollToSection('projects')} className="w-full sm:w-auto glass-strong bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-600 hover:to-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
               View My Work
             </button>
-            <button className="w-full sm:w-auto glass-card border-2 border-violet-300 text-slate-700 hover:glass-strong hover:text-violet-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transition-all duration-300 transform hover:scale-105">
+            <button onClick={() => scrollToSection('contact')} className="w-full sm:w-auto glass-card border-2 border-lavender-300 text-slate-700 hover:glass-strong hover:text-lavender-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transition-all duration-300 transform hover:scale-105">
               Get In Touch
             </button>
           </div>
@@ -95,8 +99,6 @@ const Hero = () => {
           <ChevronDown className="text-violet-400 w-6 h-6 sm:w-8 sm:h-8" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
