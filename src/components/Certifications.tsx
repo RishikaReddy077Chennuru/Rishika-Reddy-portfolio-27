@@ -5,36 +5,25 @@ import { Award, ExternalLink } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect",
+      title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
       issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-SA-2023-001",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
-      verifyUrl: "#"
+      date: "2025",
+      image: "/lovable-uploads/fee3d1f6-77ce-42c8-bc48-b3df8ddfe36f.png",
+      verifyUrl: "https://www.credly.com/go/pZKtnfDw"
     },
     {
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2023",
-      credentialId: "GCP-PD-2023-002",
-      image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400&h=300&fit=crop",
-      verifyUrl: "#"
+      title: "Android Developer Virtual Internship",
+      issuer: "Google for Developers",
+      date: "2024",
+      image: "/lovable-uploads/446df17d-588f-43c4-b508-3d21231e70b9.png",
+      verifyUrl: "/lovable-uploads/f4b31e92-8bda-4ab2-8379-3e031865971c.png"
     },
     {
-      title: "Meta React Advanced Developer",
-      issuer: "Meta (Facebook)",
-      date: "2022",
-      credentialId: "META-RAD-2022-003",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
-      verifyUrl: "#"
-    },
-    {
-      title: "Microsoft Azure DevOps Engineer",
-      issuer: "Microsoft",
-      date: "2022",
-      credentialId: "MS-AZ400-2022-004",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
-      verifyUrl: "#"
+      title: "Data Science & Analytics",
+      issuer: "HP Foundation",
+      date: "2024",
+      image: "/lovable-uploads/9c8c78af-b2fb-44e1-90c8-6f3d1b841c63.png",
+      verifyUrl: "/lovable-uploads/e366028b-f716-4880-8476-5ed1acec023d.png"
     }
   ];
 
@@ -42,45 +31,42 @@ const Certifications = () => {
     <section id="certifications" className="relative py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Certifications</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
+            <span className="bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent">Certifications</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-300 to-blue-300 mx-auto rounded-full"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <div 
               key={cert.title}
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-500 hover:transform hover:scale-105"
+              className="group glass-card rounded-3xl overflow-hidden hover:glass-strong transition-all duration-500 hover:transform hover:scale-105 cursor-pointer hover-glow"
               data-aos="fade-up"
               data-aos-delay={index * 150}
+              onClick={() => window.open(cert.verifyUrl, '_blank')}
             >
-              <div className="relative overflow-hidden h-32">
+              <div className="relative overflow-hidden h-48">
                 <img 
                   src={cert.image} 
                   alt={cert.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                 <div className="absolute top-2 right-2">
-                  <Award className="text-yellow-400" size={20} />
+                  <Award className="text-pink-400 drop-shadow-lg" size={20} />
                 </div>
               </div>
               
               <div className="p-4">
-                <h3 className="text-lg font-bold text-white mb-2 line-clamp-2">{cert.title}</h3>
-                <p className="text-purple-300 font-medium mb-1">{cert.issuer}</p>
-                <p className="text-gray-400 text-sm mb-2">{cert.date}</p>
-                <p className="text-gray-500 text-xs mb-3">ID: {cert.credentialId}</p>
+                <h3 className="text-lg font-bold card-text-primary mb-2 line-clamp-2">{cert.title}</h3>
+                <p className="text-purple-500 font-medium mb-1">{cert.issuer}</p>
+                <p className="card-text-secondary text-sm mb-3">{cert.date}</p>
                 
-                <a 
-                  href={cert.verifyUrl}
-                  className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors duration-200"
-                >
+                <div className="inline-flex items-center gap-2 text-blue-500 hover:text-purple-500 text-sm font-medium transition-colors duration-200">
                   <ExternalLink size={14} />
-                  Verify
-                </a>
+                  View Certificate
+                </div>
               </div>
             </div>
           ))}
