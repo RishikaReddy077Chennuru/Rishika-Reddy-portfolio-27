@@ -58,7 +58,7 @@ const Hero = () => {
         
         <div className="hero-text mb-4 sm:mb-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 sm:mb-4 leading-tight glow-text">
-            <span className="bg-gradient-to-r from-lavender-600 via-lavender-500 to-slate-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-600 via-indigo-600 to-slate-600 bg-clip-text text-transparent">
               Rishika Reddy Chennuru
             </span>
           </h1>
