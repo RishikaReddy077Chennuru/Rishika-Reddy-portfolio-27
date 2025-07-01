@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,7 +64,7 @@
       #faf7ff 75%,    /* Very light lavender */
       #f9fafb 100%    /* Off-white grey */
     );
-    color: #334155;
+    color: #1e293b;
     position: relative;
   }
 
@@ -75,27 +76,32 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 20% 50%, rgba(196, 181, 253, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(167, 139, 250, 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, rgba(196, 181, 253, 0.06) 0%, transparent 50%),
-      linear-gradient(45deg, rgba(196, 181, 253, 0.02) 0%, rgba(167, 139, 250, 0.03) 100%);
-    animation: floatingBackground 20s ease-in-out infinite;
+      radial-gradient(circle at 20% 50%, rgba(196, 181, 253, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(167, 139, 250, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(196, 181, 253, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 60% 60%, rgba(230, 220, 255, 0.08) 0%, transparent 40%),
+      linear-gradient(45deg, rgba(196, 181, 253, 0.03) 0%, rgba(167, 139, 250, 0.05) 100%);
+    animation: floatingBackground 25s ease-in-out infinite;
     pointer-events: none;
     z-index: -1;
   }
 
   @keyframes floatingBackground {
     0%, 100% {
-      opacity: 0.8;
-      transform: translateY(0px) rotate(0deg);
-    }
-    33% {
-      opacity: 1;
-      transform: translateY(-10px) rotate(1deg);
-    }
-    66% {
       opacity: 0.9;
-      transform: translateY(5px) rotate(-1deg);
+      transform: translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(-8px) rotate(1deg) scale(1.02);
+    }
+    50% {
+      opacity: 0.95;
+      transform: translateY(3px) rotate(-0.5deg) scale(0.98);
+    }
+    75% {
+      opacity: 1;
+      transform: translateY(-5px) rotate(0.8deg) scale(1.01);
     }
   }
 
@@ -171,27 +177,27 @@
 
   /* Enhanced glowing text effect */
   .glow-text {
-    color: #6d28d9; /* Deep lavender for headings */
+    color: #4c1d95; /* Deep lavender for headings */
     text-shadow: 0 0 10px rgba(196, 181, 253, 0.4),
                  0 0 20px rgba(196, 181, 253, 0.3),
                  0 0 30px rgba(196, 181, 253, 0.2);
   }
 
-  /* Text color utilities */
+  /* Text color utilities with full opacity */
   .text-primary {
-    color: #4c1d95; /* Deep lavender */
+    color: #1e293b; /* Dark slate with full opacity */
   }
 
   .text-secondary {
-    color: #64748b; /* Cool grey */
+    color: #475569; /* Darker grey with full opacity */
   }
 
   .text-accent {
-    color: #7c3aed; /* Lavender accent */
+    color: #7c3aed; /* Lavender accent with full opacity */
   }
 
   .text-muted {
-    color: #94a3b8; /* Light grey */
+    color: #64748b; /* Medium grey with full opacity */
   }
 
   /* Floating animation */
@@ -278,13 +284,13 @@
     );
   }
 
-  /* Card text colors */
+  /* Card text colors with full opacity */
   .card-text-primary {
-    color: #1e293b; /* Dark slate for primary text */
+    color: #0f172a; /* Very dark slate for primary text */
   }
 
   .card-text-secondary {
-    color: #64748b; /* Slate for secondary text */
+    color: #334155; /* Darker slate for secondary text */
   }
 
   .card-text-accent {

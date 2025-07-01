@@ -17,9 +17,9 @@ const About = () => {
             <div className="relative">
               <div className="w-64 sm:w-72 lg:w-80 h-64 sm:h-72 lg:h-80 mx-auto glass-card rounded-3xl overflow-hidden hover-glow">
                 <img 
-                  src="/lovable-uploads/fce3d925-0a08-46aa-a05a-68354862cd54.png"
+                  src="/lovable-uploads/c49da453-b5da-42c3-b65f-86d0925e32fd.png"
                   alt="Rishika Reddy Chennuru" 
-                  className="w-full h-full object-cover brightness-110 contrast-110"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-lavender-200 to-lavender-300 rounded-full blur-xl opacity-60"></div>
@@ -45,11 +45,11 @@ const About = () => {
               
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-violet-600 mb-2">5+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-lavender-600 mb-2">5+</div>
                   <div className="card-text-secondary text-sm sm:text-base">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-indigo-600 mb-2">Student</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-lavender-600 mb-2">Student</div>
                   <div className="card-text-secondary text-sm sm:text-base">Data Science</div>
                 </div>
               </div>
