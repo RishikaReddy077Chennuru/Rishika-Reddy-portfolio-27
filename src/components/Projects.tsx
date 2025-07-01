@@ -29,7 +29,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
             Featured <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-blue-400 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
