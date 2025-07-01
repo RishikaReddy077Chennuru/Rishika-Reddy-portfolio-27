@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const About = () => {
-  return (
-    <section id="about" className="relative py-16 sm:py-20 lg:py-24 responsive-container">
+  return <section id="about" className="relative py-16 sm:py-20 lg:py-24 responsive-container">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h2 className="responsive-heading font-bold mb-4 glow-text">
@@ -16,11 +13,7 @@ const About = () => {
           <div data-aos="fade-right">
             <div className="relative">
               <div className="w-64 sm:w-72 lg:w-80 h-64 sm:h-72 lg:h-80 mx-auto glass-card rounded-3xl overflow-hidden hover-glow">
-                <img 
-                  src="/lovable-uploads/fce3d925-0a08-46aa-a05a-68354862cd54.png"
-                  alt="Rishika Reddy Chennuru" 
-                  className="w-full h-full object-cover"
-                />
+                <img alt="Rishika Reddy Chennuru" className="w-full h-full object-cover" src="/lovable-uploads/c53099ba-7227-4223-89cf-614054668e5e.png" />
               </div>
               <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-violet-200 to-indigo-200 rounded-full blur-xl opacity-60"></div>
               <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-20 sm:w-24 lg:w-32 h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-slate-200 to-violet-200 rounded-full blur-xl opacity-40"></div>
@@ -57,8 +50,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
