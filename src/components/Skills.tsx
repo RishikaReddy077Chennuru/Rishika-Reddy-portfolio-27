@@ -49,7 +49,7 @@ const Skills = () => {
           <h2 className="responsive-heading font-bold mb-4 glow-text">
             My <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto rounded-full"></div>
+          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-lavender-400 to-lavender-300 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
