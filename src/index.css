@@ -60,49 +60,12 @@
     background: linear-gradient(135deg, 
       #f8fafc 0%,     /* Light grey */
       #f1f5f9 25%,    /* Lighter grey */
-      #f3f0ff 50%,    /* Light lavender */
-      #faf7ff 75%,    /* Very light lavender */
+      #f0f0ff 50%,    /* Light lavender */
+      #f5f3ff 75%,    /* Very light lavender */
       #f9fafb 100%    /* Off-white grey */
     );
     color: #1e293b;
     position: relative;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-      radial-gradient(circle at 20% 50%, rgba(196, 181, 253, 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(167, 139, 250, 0.12) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, rgba(196, 181, 253, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 60% 60%, rgba(230, 220, 255, 0.08) 0%, transparent 40%),
-      linear-gradient(45deg, rgba(196, 181, 253, 0.03) 0%, rgba(167, 139, 250, 0.05) 100%);
-    animation: floatingBackground 25s ease-in-out infinite;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  @keyframes floatingBackground {
-    0%, 100% {
-      opacity: 0.9;
-      transform: translateY(0px) rotate(0deg) scale(1);
-    }
-    25% {
-      opacity: 1;
-      transform: translateY(-8px) rotate(1deg) scale(1.02);
-    }
-    50% {
-      opacity: 0.95;
-      transform: translateY(3px) rotate(-0.5deg) scale(0.98);
-    }
-    75% {
-      opacity: 1;
-      transform: translateY(-5px) rotate(0.8deg) scale(1.01);
-    }
   }
 
   html {
@@ -133,9 +96,9 @@
   .liquid-bg {
     background: linear-gradient(-45deg, 
       #f8fafc,      /* Light grey */
-      #f3f0ff,      /* Light lavender */
+      #f0f0ff,      /* Light lavender */
       #f1f5f9,      /* Lighter grey */
-      #faf7ff       /* Very light lavender */
+      #f5f3ff       /* Very light lavender */
     );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -177,7 +140,7 @@
 
   /* Enhanced glowing text effect */
   .glow-text {
-    color: #4c1d95; /* Deep lavender for headings */
+    color: #4c1d95;
     text-shadow: 0 0 10px rgba(196, 181, 253, 0.4),
                  0 0 20px rgba(196, 181, 253, 0.3),
                  0 0 30px rgba(196, 181, 253, 0.2);
@@ -185,19 +148,19 @@
 
   /* Text color utilities with full opacity */
   .text-primary {
-    color: #1e293b; /* Dark slate with full opacity */
+    color: #1e293b !important;
   }
 
   .text-secondary {
-    color: #475569; /* Darker grey with full opacity */
+    color: #475569 !important;
   }
 
   .text-accent {
-    color: #7c3aed; /* Lavender accent with full opacity */
+    color: #7c3aed !important;
   }
 
   .text-muted {
-    color: #64748b; /* Medium grey with full opacity */
+    color: #64748b !important;
   }
 
   /* Floating animation */
@@ -268,8 +231,8 @@
     background: linear-gradient(135deg, 
       #f8fafc 0%,     /* Light grey */
       #f1f5f9 25%,    /* Lighter grey */
-      #f3f0ff 50%,    /* Light lavender */
-      #faf7ff 75%,    /* Very light lavender */
+      #f0f0ff 50%,    /* Light lavender */
+      #f5f3ff 75%,    /* Very light lavender */
       #f9fafb 100%    /* Off-white grey */
     );
   }
@@ -278,23 +241,23 @@
     background: linear-gradient(135deg, 
       rgba(248, 250, 252, 0.6) 0%,
       rgba(241, 245, 249, 0.5) 25%,
-      rgba(243, 240, 255, 0.6) 50%,
-      rgba(250, 247, 255, 0.5) 75%,
+      rgba(240, 240, 255, 0.6) 50%,
+      rgba(245, 243, 255, 0.5) 75%,
       rgba(249, 250, 251, 0.6) 100%
     );
   }
 
   /* Card text colors with full opacity */
   .card-text-primary {
-    color: #0f172a; /* Very dark slate for primary text */
+    color: #0f172a !important;
   }
 
   .card-text-secondary {
-    color: #334155; /* Darker slate for secondary text */
+    color: #334155 !important;
   }
 
   .card-text-accent {
-    color: #7c3aed; /* Lavender accent */
+    color: #7c3aed !important;
   }
 
   /* Responsive utilities */
@@ -381,11 +344,11 @@
   }
 }
 
-/* Lavender color utilities */
-.text-lavender-400 { color: #c4b5fd; }
-.text-lavender-500 { color: #a78bfa; }
-.text-lavender-600 { color: #8b5cf6; }
-.text-lavender-700 { color: #7c3aed; }
+/* Enhanced lavender color utilities */
+.text-lavender-400 { color: #c4b5fd !important; }
+.text-lavender-500 { color: #a78bfa !important; }
+.text-lavender-600 { color: #8b5cf6 !important; }
+.text-lavender-700 { color: #7c3aed !important; }
 
 .bg-lavender-200 { background-color: #e0e7ff; }
 .bg-lavender-300 { background-color: #c4b5fd; }
