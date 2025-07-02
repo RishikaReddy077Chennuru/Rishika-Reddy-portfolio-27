@@ -66,7 +66,7 @@ const Hero = () => {
         
         <div className="hero-text mb-6 sm:mb-8">
           <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Student & UI/UX Designer crafting beautiful digital experiences
+            Student, UI/UX Designer & Data Science Enthusiast creating smart and beautiful web experiences
           </p>
         </div>
         
