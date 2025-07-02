@@ -52,7 +52,7 @@ const Projects = () => {
                 <p className="card-text-secondary mb-4 leading-relaxed">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map(tech => <span key={tech} className="glass-card border border-orange-200/50 text-orange-600 px-3 py-1 rounded-full text-sm">
+                  {project.technologies.map(tech => <span key={tech} className="glass-card border border-indigo-200/50 text-indigo-600 px-3 py-1 rounded-full text-sm">
                       {tech}
                     </span>)}
                 </div>
