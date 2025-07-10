@@ -45,13 +45,13 @@ const Resume = () => {
             </button>
             
             <div className="mt-8 p-6 glass rounded-2xl">
-              <embed 
-                src="/lovable-uploads/Resume.pdf" 
-                type="application/pdf" 
-                width="100%" 
-                height="600px" 
-                className="rounded-lg shadow-lg"
-              />
+              <iframe
+  src="/lovable-uploads/Resume.pdf"
+  width="100%"
+  height="600px"
+  className="rounded-lg shadow-lg"
+  title="Resume Preview"
+/>
               <p className="text-sm card-text-secondary mt-4">
                 Click on the image or button above to download
               </p>
