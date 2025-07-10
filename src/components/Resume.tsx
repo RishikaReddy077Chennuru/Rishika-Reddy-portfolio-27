@@ -37,22 +37,22 @@ const Resume = () => {
             </div>
             
             <a
-  href="/lovable-uploads/Resume.pdf"
-  download="Resume.pdf"
-  className="glass-strong bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3"
->
-  <Download size={24} />
-  Download Resume
-</a>
+                href="/lovable-uploads/Resume.pdf"
+                download="Resume.pdf"
+                className="glass-strong bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3"
+                    >
+                <Download size={24} />
+                  Download Resume
+            </a>
             
             <div className="mt-8 p-6 glass rounded-2xl">
               <iframe
-  src="/lovable-uploads/Resume.pdf"
-  width="100%"
-  height="600px"
-  className="rounded-lg shadow-lg"
-  title="Resume Preview"
-/>
+                src="/lovable-uploads/Resume.pdf"
+                width="100%"
+                height="600px"
+                className="rounded-lg shadow-lg"
+                title="Resume Preview"
+              />
               <p className="text-sm card-text-secondary mt-4">
                 Click on the image or button above to download
               </p>
