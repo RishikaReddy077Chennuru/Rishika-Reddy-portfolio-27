@@ -6,8 +6,8 @@ const Resume = () => {
   const handleDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = "/lovable-uploads/Resume.pdf";
-    link.download = "Resume.pdf";
+    link.href = '/lovable-uploads/Resume.pdf';
+    link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -47,7 +47,7 @@ const Resume = () => {
             
             <div className="mt-8 p-6 glass rounded-2xl">
               <iframe
-                src="/lovable-uploads/Resume.pdf"
+                src='/lovable-uploads/Resume.pdf'
                 width="100%"
                 height="600px"
                 className="rounded-lg shadow-lg"
