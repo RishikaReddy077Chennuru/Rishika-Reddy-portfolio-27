@@ -36,13 +36,14 @@ const Resume = () => {
               </p>
             </div>
             
-            <button
-              onClick={handleDownload}
-              className="glass-strong bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3"
-            >
-              <Download size={24} />
-              Download Resume
-            </button>
+            <a
+  href="/lovable-uploads/Resume.pdf"
+  download="Resume.pdf"
+  className="glass-strong bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3"
+>
+  <Download size={24} />
+  Download Resume
+</a>
             
             <div className="mt-8 p-6 glass rounded-2xl">
               <iframe
