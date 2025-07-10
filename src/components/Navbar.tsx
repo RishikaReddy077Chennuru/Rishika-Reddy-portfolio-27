@@ -17,8 +17,8 @@ const Navbar = () => {
   const handleResumeDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/18db0b6a-9902-4ffd-b3ab-068aa21bd36c.png';
-    link.download = 'Rishika_Reddy_Chennuru_Resume.png';
+    link.href = '/uploads/Resume.pdf';
+    link.download = 'Rishika_Reddy_Chennuru_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
