@@ -45,11 +45,12 @@ const Resume = () => {
             </button>
             
             <div className="mt-8 p-6 glass rounded-2xl">
-              <img 
-                src="/lovable-uploads/Resume.pdf"
-                alt="Rishika Reddy Chennuru Resume Preview" 
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={handleDownload}
+              <embed 
+                src="/lovable-uploads/Resume.pdf" 
+                type="application/pdf" 
+                width="100%" 
+                height="600px" 
+                className="rounded-lg shadow-lg"
               />
               <p className="text-sm card-text-secondary mt-4">
                 Click on the image or button above to download
