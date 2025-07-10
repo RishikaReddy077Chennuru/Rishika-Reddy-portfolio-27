@@ -6,8 +6,8 @@ const Resume = () => {
   const handleDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/18db0b6a-9902-4ffd-b3ab-068aa21bd36c.png';
-    link.download = 'Rishika_Reddy_Chennuru_Resume.png';
+    link.href = "/lovable-uploads/Resume.pdf";
+    link.download = "Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -46,7 +46,7 @@ const Resume = () => {
             
             <div className="mt-8 p-6 glass rounded-2xl">
               <img 
-                src="/lovable-uploads/18db0b6a-9902-4ffd-b3ab-068aa21bd36c.png"
+                src="/lovable-uploads/Resume.pdf"
                 alt="Rishika Reddy Chennuru Resume Preview" 
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300"
                 onClick={handleDownload}
