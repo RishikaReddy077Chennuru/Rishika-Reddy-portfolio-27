@@ -13,7 +13,7 @@ const About = () => {
           <div data-aos="fade-right">
             <div className="relative">
               <div className="w-64 sm:w-72 lg:w-80 h-64 sm:h-72 lg:h-80 mx-auto glass-card rounded-3xl overflow-hidden hover-glow">
-                <img alt="Rishika Reddy Chennuru" className="w-full h-full object-cover brightness-110 contrast-110" src="/lovable-uploads/ba090e19-dfda-422d-859b-cc2ba381bd85.png" />
+                <img alt="Rishika Reddy Chennuru" className="w-full h-full object-cover brightness-110 contrast-110" src="/uploads/ba090e19-dfda-422d-859b-cc2ba381bd85.png" />
               </div>
               <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-lavender-200 to-lavender-300 rounded-full blur-xl opacity-60"></div>
               <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-20 sm:w-24 lg:w-32 h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-slate-200 to-lavender-200 rounded-full blur-xl opacity-40"></div>
